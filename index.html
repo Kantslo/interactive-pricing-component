@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <main class="pricing-card">
+      <header class="header">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </header>
+      <form class="pricing-form">
+        <div class="tempo">
+          <div class="div1">
+            <span class="pageviews">100K pageviews</span>
+          </div>
+          <div class="div2">
+            <input
+              class="slider"
+              type="range"
+              name="range"
+              id="range"
+              min="1"
+              max="32"
+              value="16"
+              step="1"
+            />
+          </div>
+          <div class="div3">
+            <span class="price">$16.00</span>
+          </div>
+        </div>
+        <div class="billing-toggle">
+          <label for="monthly-billing">Monthly Billing</label>
+          <label class="toggle" for="monthly-billing">
+            <input
+              class="switch"
+              type="checkbox"
+              name="billing-toggle"
+              id="monthly-billing"
+            />
+            <span class="switchBall"></span>
+          </label>
+          <label for="yearly-billing">Yearly Billing</label>
+          <span class="sale"></span>
+        </div>
+        <div class="pricing-bottom">
+          <div class="features">
+            <div>
+              <span>
+                <img src="./images/icon-check.svg" alt="" />
+                <p>Unlimited websites</p>
+              </span>
+              <span>
+                <img src="./images/icon-check.svg" alt="" />
+                <p>100% data ownership</p>
+              </span>
+              <span>
+                <img src="./images/icon-check.svg" alt="" />
+                <p>Email reports</p>
+              </span>
+            </div>
+            <div class="button">
+              <button type="submit">Start my trial</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
